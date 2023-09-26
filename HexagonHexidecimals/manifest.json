@@ -1,0 +1,28 @@
+{
+    "name": "Guess the Hexidecimals",
+    "short_name": "GuessHex",
+    "start_url": "https://hexagon-hexidecimals-game.glitch.me/",
+    "display": "standalone",
+    "background_color": "#ffe38b",
+    "theme_color": "#ffc100",
+    "description": "Computer Science 12 Project, game about matching hexidecimal color codes",
+    "icons": [
+      {
+        "src": "https://cdn.glitch.global/6acb0fc5-474b-4d00-9c86-7a233a9861be/favicon.png?v=1695656053926",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "https://cdn.glitch.global/6acb0fc5-474b-4d00-9c86-7a233a9861be/favicon256.png?v=1695751709191",
+        "sizes": "256x256",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "play",
+        "url": "https://hexagon-hexidecimals-game.glitch.me/"
+      }
+    ]
+  }
