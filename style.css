@@ -1,0 +1,175 @@
+body {
+    font-family: monospace;
+    margin: 0px;
+    align-items: center;
+    background-color: #ffe38b;
+    box-sizing: border-box;
+    start-url: "https://example.com"
+  }
+  
+  h1 {
+    text-align: center;
+    
+    border: 10px solid #ffc100;
+    border-radius: 5px;
+    grid-column: span 6;
+    padding:10px;
+    
+    margin:0px;
+    
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #sample {
+    width: 60vw;
+    min-width: 200px;
+    height: 20vh;
+    min-height: 50px;
+    position: relative;
+  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    
+    border: 10px solid #ffc100;
+    border-radius: 5px;
+  
+    background-color: #ffc100;
+    font-size: 3em;
+    display: flex;
+  
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+  }
+  
+  #answerContainer {
+    /*border: 1px solid #FFC100;*/
+  
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+  
+    align-items: center;
+    justify-content: center;
+  
+    width: 80vw;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .grid2{
+    grid-template-rows: 1fr;
+  }
+  
+  .grid4{
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .grid8{
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  
+  .answerBox {
+    display: flex;
+    margin: 10px;
+    border: 10px solid #ffc100;
+    border-radius: 10px;
+  
+    position: relative;
+  
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+  
+    font-size: 2em;
+    height: 10vh;
+    min-height: 75px;
+    
+  }
+  
+  .answerBox:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+  }
+  
+  #lightbox{
+    position: fixed;
+    
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: #ffe38b;
+  }
+  
+  .hidden{
+    display:none;
+  }
+  
+  #lightboxMenu{
+    position: fixed;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    height: 75vh;
+    min-width: 400px;
+    
+    background-color: #ffe38b;
+    border: 20px solid #ffc100;
+    border-radius: 15px;
+    
+    display:grid;
+    text-align: center;
+    
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  @media (max-width: 768px){
+    #lightboxMenu{
+      font-size: 15px;
+    }
+  }
+  
+  .gamemodeChoice{
+    grid-column: span 3;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 10px solid #ffc100;
+    border-radius: 10px;
+    position: relative;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+  }
+  
+  .difficultyChoice{
+    grid-column: span 2;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 10px solid #ffc100;
+    border-radius: 10px;
+    position: relative;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+  }
+  
+  .choice:hover{
+    transform: scale(1.03);
+    background-color: #FFC100;
+    /*border-color: black;*/
+    transition: 0.4s;
+  }
